@@ -52,7 +52,7 @@ var resultDiv;
 
 document.addEventListener("deviceready", init, false);
 function init() {
-   //document.querySelector("#startScan").addEventListener("touchend", , false);
+   document.querySelector("#startScan").addEventListener("touchend", startScan, false);
    startScan();
    resultDiv = document.querySelector("#results");
 }

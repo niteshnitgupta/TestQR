@@ -5,16 +5,23 @@
         <meta name="msapplication-tap-highlight" content="no" />
         <!-- WARNING: for iOS 7, remove the width=device-width and height=device-height attributes. See https://issues.apache.org/jira/browse/CB-4323 -->
         <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />
-        <link rel="stylesheet" type="text/css" href="css/index.css" />
-        <title>Hello World</title>
+        <link href="css/font.css" rel="stylesheet" type="text/css">
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/skeleton.css">
+        <script src="js/jquery.js"></script>
+        <script type="text/javascript" src="js/iscroll.js"></script>
+        <title>NavMe</title>
     </head>
     <body>
-        <p>
-            <button id="startScan">Start Scan</button>
-        </p>
-
-        <div id="results"></div>
-        <script type="text/javascript" src="cordova.js"></script>
-        <script type="text/javascript" src="js/index.js"></script>
+      <div style="width:100%; margin:0 0 0 0; background-color:#33C3F0; color:#FFFFFF;">
+        <div style="padding:10px;"> <b> Nav ME </b> <span style="float:right;"></span> </div>
+      </div>
+      <br />
+      <div id="results">Hello</div>
+      <div style="position: fixed; bottom: -5px; width: 100%; text-align:center;">
+            <button class="button-primary" id="startScan" style="width:98%; padding: 0px;">Capture QR Code</button>
+      </div>
+      <script type="text/javascript" src="cordova.js"></script>
+      <script type="text/javascript" src="js/index.js"></script>
     </body>
 </html>
